@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '4_9_c3e4_36fa_79e3').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_5cddcf84cd20f41e1acf8e86a76b1e5fe').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -38,7 +38,7 @@ module.exports = {
   RMBG_KEY: process.env.RMBG_KEY || 'null',
   BAILEYS_LOG_LVL: process.env.BAILEYS_LOG_LVL || 'silent',
   LANG: (process.env.LANGUAG || 'en').toLowerCase(),
-  WARN_LIMIT: process.env.WARN_LIMIT || 3,
+  WARN_LIMIT: procss.env.WARN_LIMIT || 3,
   FORCE_LOGOUT: toBool(process.env.FORCE_LOGOUT),
   BRAINSHOP: process.env.BRAINSHOP || '159501,6pq8dPiYt7PdqHz3',
   DIS_BOT: process.env.DISABLE_BOT || 'null',
